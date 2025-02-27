@@ -1,0 +1,37 @@
+package etecuirapuru.com.br.main;
+
+import java.util.Scanner;
+
+public class main {
+
+    public static void main(String[] args) {
+        Scanner lerOQueUsuarioDigita = new Scanner(System.in);
+        String nomeUsuario;
+
+        System.out.println("Digite seu nome: ");
+        nomeUsuario = lerOQueUsuarioDigita.next();
+
+        int rmaluno;
+        System.out.println("Digite seu RM: ");
+        rmaluno = lerOQueUsuarioDigita.nextInt();
+
+        String isQuerEmboraCedo;
+        System.out.println("Quer sair mais cedo?(S - N ");
+        isQuerEmboraCedo = lerOQueUsuarioDigita.next();
+
+        if (isQuerEmboraCedo.toLowerCase().equals("s")) {
+            isQuerIrEmboraCedo = "Sim";
+        } else {
+            isQuerIrEmboraCedo = "Não";
+        }
+        System.out.println("");
+        System.out.println("---------- INFORMAÇÕES ALUNO------------");
+        System.out.println("");
+        System.out.println("Nome: " + nomeUsuario
+                + "\nRM: " + rmaluno
+                + "Vai mais cedo " + isQuerEmboraCedo);
+        System.out.println("");
+        System.out.println("---------- INFORMAÇÕES ALUNO------------");
+        System.out.println("");
+    }
+}
