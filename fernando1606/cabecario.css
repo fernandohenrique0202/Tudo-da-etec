@@ -1,0 +1,9 @@
+.container-header{
+    width:100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to right, rgb(216, 204, 204))
+}
